@@ -1,0 +1,293 @@
+* body{
+	font-family: 'Inter', sans-serif;
+	color: #fff;
+}
+
+body{
+	max-width: 1000px;
+	margin: 0 auto;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #0080FF;
+}
+
+.main{
+	width: 100vw;
+	height: 80vh;
+	display: flex;
+	flex-direction: column;
+
+}
+
+.entrada, .saida{
+	margin: 0 10px;
+}
+
+.entrada{
+	display: flex;
+	flex-direction: column;
+}
+
+.entrada{
+	margin-top: 50px;
+	margin-left: 30px;
+	display: inline-block;
+    width: 10px;
+}
+ .nav{
+ 	width: 10%;
+ 	margin-left: 30px;
+	display: inline-block;
+	margin-bottom: 50px;
+ }
+
+.entrada .input-usuario{
+	border: none;
+	background: none;
+	font-size: 20px;
+	outline: none;
+	margin: 50px 0;
+}
+
+.menu{
+	margin-top: 80px;
+	border: 1px solid #FFF;
+	border-radius: 24px;
+	width: 100%;
+
+}
+
+.entrada .input-usuario::placeholder{
+	color: #FFF;
+}
+
+.input-usuario{
+	margin-top: 300px;
+}
+
+.secao-botoes .help{
+	font-size: 12px;
+}
+
+.secao-botoes .botoes{
+	display: flex;
+	flex-direction: column;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+.botoes .botao{
+	max-width: 200px;
+	width: 100%;
+	margin: 2px auto;
+	border: 1px solid #FFF;
+	background: none;
+	border-radius: 24px;
+	padding: 5px 0;
+	cursor: pointer;
+}
+
+.botoes .botao:hover{
+	transition: 2s;
+	background-color: #bab9f1;
+}
+
+.saida{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 20px;
+	border-radius: 20px;
+	width: 50%;
+	max-height: 500px;
+	background-color: #bab9f1;
+	color: #000;
+}
+
+.saida h2{
+	font-weight: 700;
+}
+
+.saida p{
+	font-weight: 400;
+}
+
+.garoto {
+	margin-bottom: 50px;
+}
+
+.mostrar{
+	    padding: 10px 20px;
+	    color: #000;
+	    border-radius: 10px;
+	    border: none;
+	    margin-top: 15px;
+	    cursor: pointer;
+		width: 100%
+}
+.copiar{   
+	    width: 100%;
+        padding: 15px 20px;
+	    color: #0033ff;
+	    border-radius: 10px;
+	    border: none;
+	    margin-top: 30px;
+	    cursor: pointer;
+}
+
+.mostrar .copiar:hover{
+	background-color: #ccc6ff;
+	transition: 1s;
+}
+
+@media screen and (max-width: 260px){
+	.saida{
+		width: 80%;
+		max-height: 800px;
+		display: flex;
+		justify-content: center;
+		background-color: #bab9f1;
+		padding: 20px;
+	}
+
+	.saida h2, .saida p{
+		color: #000;
+	}
+
+	.saida h2{
+		font-size: 10px;
+		text-align: center;
+	}
+
+	.saida p{
+		font-size: 10px;
+		margin-top: 5px;
+		text-align: center;
+	}
+
+	.saida .mostrar{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 260px){
+	.secao-botoes .help{
+		text-align: center;
+	}
+	
+	.saida{
+		width: 80%;
+		max-height: 800px;
+		display: flex;
+		justify-content: center;
+		background-color: #bab9f1;
+		padding: 20px;
+	}
+
+	.saida h2, .saida p{
+		font-size: 12px;
+		text-align: center;
+		color: black;
+	}
+
+	.saida p{margin-top: 5px;}
+
+	.saida .mostrar{
+		display: none;
+	}
+}
+
+@media screen and (min-width: 380px){
+		.secao-botoes .help{
+		margin-left: 20px;
+	}
+	.secao-botoes .botoes{
+		flex-direction: row;
+	}
+	
+	.saida{
+		margin: 20px auto 0;
+		width: 80%;
+	}
+
+	.botoes .botao{
+		width: 40%;
+		padding: 10px;
+	}
+
+	.saida h2, .saida p{
+		font-size: 15px;
+	}
+
+}
+
+@media screen and (min-width: 500px){
+	.entrada .input-usuario{
+		width: 80%;
+		margin-left: 30px;
+	}
+	.entrada .input-usuario::placeholder{
+		font-size: 24px;	
+	}
+
+	.entrada .secao-botoes{
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	.secao-botoes .help{
+		text-align: left;
+		margin-left: 5%;
+	}
+
+	.saida{
+		margin: 20px auto 0;
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 750px){
+	.main{
+		width: 100%;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.entrada{
+		width: 60%;
+	}
+
+	.entrada, .input-usuario{
+		border: none;
+		background: none;
+		font-size: 20px;
+		outline: none;
+		margin: 60px 30px;
+	}
+
+	.botoes, .botao{
+		margin-top: 15px;
+		font-size: 15px;
+		text-transform: capitalize;
+		border: 1px solid #FFF;
+		background: none;
+		border-radius: 24px;
+		padding: 15px 0;
+	}
+
+	.saida{
+		width: 30%;
+		max-height: 700px;
+		display: flex;
+		justify-content: center;
+		background-color: #bab9f1;
+	}
+
+	.saida h2, .saida p{
+		color: black;
+	}
+}
